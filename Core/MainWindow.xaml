@@ -10,8 +10,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="Button"  HorizontalAlignment="Left" Margin="264,260,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TreeView x:Name="CTreeWiew" HorizontalAlignment="Left" Height="187" Margin="10,40,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button Content="Create DB"  HorizontalAlignment="Left" Margin="264,260,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TreeView x:Name="CTreeWiew" HorizontalAlignment="Left" Height="187" Margin="10,40,0,0" VerticalAlignment="Top" Width="130">
+            <!--<TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type self:MenuItem}" ItemsSource="{Binding Items}">
+                    <TextBlock Text="{Binding Title}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>-->
+        </TreeView>
+        <Button Content="Add Data" HorizontalAlignment="Left" Margin="48,260,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <ListBox x:Name="Lists" HorizontalAlignment="Left" Height="187" Margin="201,40,0,0" VerticalAlignment="Top" Width="165"/>
 
     </Grid>
 </Window>
